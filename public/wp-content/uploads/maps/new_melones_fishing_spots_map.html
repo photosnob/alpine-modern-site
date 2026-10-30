@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4cb9576212bfb822d3648088f26039e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4cb9576212bfb822d3648088f26039e7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4cb9576212bfb822d3648088f26039e7 = L.map(
+                "map_4cb9576212bfb822d3648088f26039e7",
+                {
+                    center: [37.933, -120.55],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_be03b5239be519663700f9505a8f9698 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4cb9576212bfb822d3648088f26039e7);
+        
+    
+            var marker_760da65f2bd6084539e1443451ec0ecc = L.marker(
+                [37.8775, -120.5967],
+                {}
+            ).addTo(map_4cb9576212bfb822d3648088f26039e7);
+        
+    
+            var icon_7eeb886d3928ce1ba44142ac0d8337b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_760da65f2bd6084539e1443451ec0ecc.setIcon(icon_7eeb886d3928ce1ba44142ac0d8337b2);
+        
+    
+        var popup_308c2af94c725715ae8a519ce58dced3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d791da73f0bf8027f8faa4effb4fd30f = $(`<div id="html_d791da73f0bf8027f8faa4effb4fd30f" style="width: 100.0%; height: 100.0%;">Tulloch Arm</div>`)[0];
+            popup_308c2af94c725715ae8a519ce58dced3.setContent(html_d791da73f0bf8027f8faa4effb4fd30f);
+        
+
+        marker_760da65f2bd6084539e1443451ec0ecc.bindPopup(popup_308c2af94c725715ae8a519ce58dced3)
+        ;
+
+        
+    
+    
+            var marker_60011ab2ab2228a8b2f90da6aea0a7d7 = L.marker(
+                [37.9747, -120.4966],
+                {}
+            ).addTo(map_4cb9576212bfb822d3648088f26039e7);
+        
+    
+            var icon_d1ee3e0a0a7dde3e705cc1351914a6be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_60011ab2ab2228a8b2f90da6aea0a7d7.setIcon(icon_d1ee3e0a0a7dde3e705cc1351914a6be);
+        
+    
+        var popup_33afa45b180f3855e2eac6c85e0987a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92ffbd61f25e53e9dddeadb9e77f168d = $(`<div id="html_92ffbd61f25e53e9dddeadb9e77f168d" style="width: 100.0%; height: 100.0%;">Angels Creek</div>`)[0];
+            popup_33afa45b180f3855e2eac6c85e0987a0.setContent(html_92ffbd61f25e53e9dddeadb9e77f168d);
+        
+
+        marker_60011ab2ab2228a8b2f90da6aea0a7d7.bindPopup(popup_33afa45b180f3855e2eac6c85e0987a0)
+        ;
+
+        
+    
+    
+            var marker_b206d5acd9dd056880031296fdc12164 = L.marker(
+                [37.9089, -120.5197],
+                {}
+            ).addTo(map_4cb9576212bfb822d3648088f26039e7);
+        
+    
+            var icon_94233c4389995097658f73e6983a6313 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b206d5acd9dd056880031296fdc12164.setIcon(icon_94233c4389995097658f73e6983a6313);
+        
+    
+        var popup_1557fce25384dbe799dff1bde73bb913 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cbf83fcf8cf584a77f19bc4c6dcac75 = $(`<div id="html_0cbf83fcf8cf584a77f19bc4c6dcac75" style="width: 100.0%; height: 100.0%;">Coyote Creek Inlet</div>`)[0];
+            popup_1557fce25384dbe799dff1bde73bb913.setContent(html_0cbf83fcf8cf584a77f19bc4c6dcac75);
+        
+
+        marker_b206d5acd9dd056880031296fdc12164.bindPopup(popup_1557fce25384dbe799dff1bde73bb913)
+        ;
+
+        
+    
+    
+            var marker_89f7f017ec4eb371731ae039679a5b25 = L.marker(
+                [37.929, -120.5235],
+                {}
+            ).addTo(map_4cb9576212bfb822d3648088f26039e7);
+        
+    
+            var icon_85706cd0881505dc9312fd6f8c4298bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89f7f017ec4eb371731ae039679a5b25.setIcon(icon_85706cd0881505dc9312fd6f8c4298bc);
+        
+    
+        var popup_174e8803f7c148a242e17946220ca8bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af5327ed771c38ddfb7a33a88a02657b = $(`<div id="html_af5327ed771c38ddfb7a33a88a02657b" style="width: 100.0%; height: 100.0%;">Submerged Islands and Rock Piles</div>`)[0];
+            popup_174e8803f7c148a242e17946220ca8bc.setContent(html_af5327ed771c38ddfb7a33a88a02657b);
+        
+
+        marker_89f7f017ec4eb371731ae039679a5b25.bindPopup(popup_174e8803f7c148a242e17946220ca8bc)
+        ;
+
+        
+    
+</script>
+</html>

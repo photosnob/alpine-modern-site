@@ -27,3 +27,10 @@ npx wrangler dev     # run locally the way Cloudflare serves it
 ```
 
 `build-from-wordpress.py` is the one-time script that produced `public/` from the WordPress mirror; it isn't part of the deploy.
+
+## File size limit
+
+Cloudflare Workers serves files up to 25 MiB. `wp-content/uploads/2025/06/IMG_4896.mov`
+(the Tacoma cab-mount video) was re-encoded from 50 MiB to about 10 MiB to fit
+(`ffmpeg -c:v libx264 -crf 24 -c:a aac -b:a 128k -movflags +faststart`). If the site is ever
+rebuilt from the WordPress mirror, re-encode it again.

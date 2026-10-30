@@ -5,19 +5,13 @@ Alpine Modern, moved off WordPress to a static site on Cloudflare Workers. Every
 The pages in `public/` are the live WordPress site's own HTML, styles, scripts and images (theme, Elementor and plugin files kept at their WordPress paths, so everything renders and animates as before). Changes made in the move:
 
 - The online booking system (MotoPress + Stripe) and the "Check Availability" buttons were removed; the cart, checkout, account and booking pages redirect to the home page (`public/_redirects`).
-- The contact form sends to `/api/contact` (`worker/contact.js`), which emails it through Resend.
+- The Contact page and its menu link were removed; `/contact/` redirects to the home page.
 - Comment forms were removed (existing comments are still shown).
 - `public/sitemap.xml` and `public/robots.txt` replace All in One SEO's.
 
 ## Editing
 
 Each page is `public/<url>/index.html` (the home page is `public/index.html`). Edit the HTML directly, or ask Claude to. Images go in `public/wp-content/uploads/`.
-
-## Contact form settings (Cloudflare → Workers & Pages → alpine-modern-site → Settings → Variables and Secrets)
-
-- `RESEND_API_KEY` (secret)
-- `CONTACT_TO`: where messages go
-- `CONTACT_FROM`: e.g. `Alpine Modern <onboarding@resend.dev>`
 
 ## Commands
 
